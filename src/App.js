@@ -6,6 +6,10 @@ import Header from './components/Header';
 import MyContainer from './components/MyContainer';
 import About from './components/About';
 import i18n from './i18n';
+import MyHOC from './MyHOC';
+import MyComponent from './MyComponent';
+
+const WrappedComponent = MyHOC(MyComponent);
 
 const App = () => {
   return (
@@ -13,6 +17,7 @@ const App = () => {
       <Router>
         <div>
           <Header />
+          <WrappedComponent />
           <Routes>
             <Route path="/" exact element={<MyContainer/>} />
             <Route path="/about" element={<About/>} />
