@@ -6,8 +6,8 @@ import Header from './components/Header';
 import MyContainer from './components/MyContainer';
 import About from './components/About';
 import i18n from './i18n';
-import MyHOC from './MyHOC';
-import MyComponent from './MyComponent';
+import MyHOC from './components/MyHOC';
+import MyComponent from './components/MyComponent';
 
 const WrappedComponent = MyHOC(MyComponent);
 
